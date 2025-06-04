@@ -5,55 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ELEKTRO-TYCHOL</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #f0f0f0;
+      padding: 0;
     }
-    header, footer {
-      background-color: #1f1f1f;
-      padding: 20px;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #101010;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1c1c1c;
+      padding: 30px 20px;
       text-align: center;
     }
+    header img {
+      width: 100px;
+      border-radius: 12px;
+    }
+    header h1 {
+      margin-top: 10px;
+      font-size: 2.2rem;
+      color: #00c6ff;
+    }
+    nav {
+      margin-top: 20px;
+    }
     nav a {
-      margin: 0 15px;
-      color: #f0f0f0;
+      color: #f5f5f5;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00c6ff;
     }
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .logo {
-      width: 80px;
-      height: auto;
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #00c6ff;
+      padding-left: 10px;
     }
     .services ul {
       list-style: none;
       padding: 0;
     }
     .services li {
-      background: #2a2a2a;
+      background: #1f1f1f;
       margin: 10px 0;
-      padding: 10px;
+      padding: 12px 20px;
       border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,198,255,0.1);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
     }
     .gallery img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 8px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,198,255,0.2);
     }
-    .contact-info {
-      line-height: 1.6;
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo ELEKTRO-TYCHOL" class="logo" />
+    <img src="logo.png" alt="Logo ELEKTRO-TYCHOL" />
     <h1>ELEKTRO-TYCHOL</h1>
     <nav>
       <a href="#onas">O nas</a>
@@ -65,31 +102,35 @@
 
   <section id="onas">
     <h2>O nas</h2>
-    <p>ELEKTRO-TYCHOL to doświadczona firma elektryczna działająca na terenie województwa podkarpackiego. Specjalizujemy się w kompleksowych instalacjach elektrycznych dla inwestycji mieszkaniowych, przemysłowych i publicznych. Nasz zespół to wykwalifikowani fachowcy, którzy gwarantują solidność, terminowość i bezpieczeństwo.</p>
+    <p>Jesteśmy firmą z wieloletnim doświadczeniem w branży elektroinstalacyjnej. ELEKTRO-TYCHOL działa na terenie województwa podkarpackiego, realizując zarówno duże inwestycje, jak i mniejsze zlecenia prywatne. Naszą specjalnością są kompleksowe instalacje elektryczne, od projektu aż po pomiary końcowe.</p>
   </section>
 
   <section id="uslugi" class="services">
     <h2>Nasze usługi</h2>
     <ul>
-      <li>Instalacje elektryczne niskiego i średniego napięcia</li>
+      <li>Instalacje elektryczne NN i SN</li>
       <li>Instalacje odgromowe i uziemienia</li>
-      <li>Systemy alarmowe i monitoringu</li>
-      <li>Automatyka budynkowa</li>
+      <li>Monitoring, alarmy, systemy SSP</li>
       <li>Pomiary elektryczne i przeglądy</li>
-      <li>Modernizacje i konserwacje instalacji</li>
+      <li>Inteligentne instalacje / Smart Home</li>
+      <li>Serwis i konserwacja instalacji</li>
     </ul>
   </section>
 
-  <section id="galeria" class="gallery">
+  <section id="galeria">
     <h2>Galeria</h2>
-    <p>Tu znajdą się przykładowe realizacje (możesz dodać zdjęcia).</p>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/280x180.png?text=Realizacja+1" alt="Realizacja 1" />
+      <img src="https://via.placeholder.com/280x180.png?text=Realizacja+2" alt="Realizacja 2" />
+    </div>
   </section>
 
   <section id="kontakt">
     <h2>Kontakt</h2>
     <div class="contact-info">
-      <p><strong>ELEKTRO-TYCHOL</strong></p>
-      <p>tel.: 537-435-946</p>
+      <p><strong>Właściciel:</strong> Bartosz Tyszczuk – tel. 537-435-946</p>
+      <p><strong>Wspólnik:</strong> Hubert Żak – tel. 669-505-915</p>
+      <p><strong>Dokumentacja / kosztorysy:</strong> Artur Białas – tel. 608-411-802</p>
       <p>e-mail: bartosz.tyszczuk@gmail.com</p>
       <p>Województwo podkarpackie</p>
     </div>
