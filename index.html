@@ -1,75 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ELEKTRO-TYCHOL</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #101010;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background: #1c1c1c;
-      text-align: center;
-      padding: 20px;
-    }
-    nav a {
-      color: #00c6ff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px;
-      text-align: center;
-    }
-    img.logo {
-      width: 100px;
-    }
-    ul {
-      text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.8em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - ELEKTRO-TYCHOL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-item {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .caption {
+            text-align: center;
+            padding: 5px 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo" class="logo" />
-    <h1>ELEKTRO-TYCHOL</h1>
-    <nav>
-      <a href="index.html">O nas</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-  </header>
-  <section>
-    <h2>O nas</h2>
-    <p>ELEKTRO-TYCHOL działa na terenie województw: podkarpackiego, lubelskiego, świętokrzyskiego, małopolskiego, mazowieckiego oraz śląskiego. Realizujemy zarówno duże inwestycje, jak i mniejsze zlecenia prywatne. Naszą specjalnością są kompleksowe instalacje elektryczne, od projektu aż po pomiary końcowe. Obsługujemy obiekty mieszkalne, przemysłowe i publiczne.</p>
-    <h3>Zakres naszych usług:</h3>
-    <ul>
-      <li>Wykonywanie instalacji elektrycznych i oświetleniowych</li>
-      <li>Instalacje elektryczne w domach jednorodzinnych, mieszkaniach i apartamentach</li>
-      <li>Instalacje przemysłowe i automatyka budynkowa</li>
-      <li>Systemy alarmowe (SSWiN), przeciwpożarowe (SAP, DSO), monitoring wizyjny (CCTV)</li>
-      <li>Kontrola dostępu i rejestracja czasu pracy (KD/RCP)</li>
-      <li>Instalacje teletechniczne i sieci LAN</li>
-      <li>Montaż tras kablowych, kanałów i koryt</li>
-      <li>Prefabrykacja i montaż szaf rozdzielczych oraz sterowniczych</li>
-      <li>Podłączenia maszyn, linii technologicznych oraz urządzeń HVAC</li>
-      <li>Budowa i modernizacja stacji transformatorowych SN/nN</li>
-      <li>Montaż i uruchomienie instalacji fotowoltaicznych</li>
-      <li>Pomiary elektryczne, przeglądy okresowe i wystawianie protokołów</li>
-      <li>Pełna dokumentacja powykonawcza i projektowa</li>
-    </ul>
-  </section>
-  <footer>
-    <p>&copy; 2025 ELEKTRO-TYCHOL</p>
-  </footer>
+    <h1>Nasze Realizacje</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/rozdzielnica-1.jpg" alt="Rozdzielnica">
+            <div class="caption">Montaż rozdzielnicy</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/koryta-kablowe-1.jpg" alt="Koryta kablowe">
+            <div class="caption">Prowadzenie tras kablowych</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/fotowoltaika-1.jpg" alt="Fotowoltaika">
+            <div class="caption">Instalacja PV 150 kWp</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/automatyka-1.jpg" alt="Automatyka">
+            <div class="caption">Szafa sterownicza - automatyka</div>
+        </div>
+    </div>
 </body>
 </html>
